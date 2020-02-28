@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.1fr 1.3fr;
+      grid-template-columns: 1fr 1.1fr 1.3fr;
+  -ms-grid-rows: 1fr 4fr 3fr 2fr;
+      grid-template-rows: 1fr 4fr 3fr 2fr;
+  height: 100vh;
+  margin: 2rem;
+}
+
+.par {
+  width: 70%;
+}
+
+.main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 3 / 3;
+  background-color: #ECECEC;
+}
+
+.main__title {
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.main__desc {
+  padding: 1rem 0 2.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.main__p {
+  padding: 0 0 0 1.5rem;
+  line-height: 2.5rem;
+}
+
+.nom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: 3 / 1 / 3 / 1;
+  background-color: #90CCF4;
+  position: relative;
+}
+
+.nom__title {
+  margin: 0 auto;
+}
+
+.yum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #5DA2D5;
+  text-align: center;
+}
+
+.yum__title {
+  margin: 0 auto;
+}
+
+.diabetes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 1 / 5 / 3;
+  background-color: #1f1f1f;
+}
+
+.diabetes__title {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin: 0 auto;
+}
+
+.food {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 3 / 5 / 5;
+  background-image: url("/img/banana.jpg");
+  background-size: cover;
+}
+
+h3 {
+  color: #F78888;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 3 / 2 / 5;
+  background-color: white;
+  padding: .5rem;
+}
+
+.header__nav {
+  text-decoration: none;
+  color: #F78888;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  display: inline-block;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#page-nav label, #ham-label {
+  display: none;
+}
+
+/*
+.grid-container {
+    grid-template-areas:
+        "main main header"
+        "main main food"
+        "nom yum food"
+        "diabetes diabetes food";
+    }
+.main {
+    grid-area: main;
+}
+.nom {
+    grid-area: nom;
+}
+.yum {
+    grid-area: yum;
+}
+.diabetes {
+    grid-area: diabetes;
+}
+.food {
+    grid-area: food;
+}
+.header {
+    grid-area: header;
+}
+*/
+/*# sourceMappingURL=main.css.map */
